@@ -16,7 +16,7 @@ import javax.xml.ws.Endpoint;
 public class CxfConfig {
     @Bean
     ServletRegistrationBean disServlet(){
-        return new ServletRegistrationBean( new CXFServlet(),"/demo/*");
+        return new ServletRegistrationBean( new CXFServlet(),"/erp2huilianyi/*");
     }
 
     @Bean(name = Bus.DEFAULT_BUS_ID)
