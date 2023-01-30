@@ -2,7 +2,7 @@ package com.idc.webservice.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.idc.webservice.service.DemoService;
+import com.idc.webservice.service.HlyService;
 import org.apache.tomcat.util.codec.binary.Base64;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,10 +17,10 @@ import org.springframework.web.client.RestTemplate;
 
 import javax.jws.WebService;
 
-@WebService(serviceName = "DemoService",targetNamespace = "http://service.webservice.idc.com",
-        endpointInterface = "com.idc.webservice.service.DemoService" )
-public class DemoServiceImpl implements DemoService {
-    Logger logger = LoggerFactory.getLogger(DemoServiceImpl.class);
+@WebService(serviceName = "HlyService",targetNamespace = "http://service.webservice.idc.com",
+        endpointInterface = "com.idc.webservice.service.HlyService")
+public class HlyServiceImpl implements HlyService {
+    Logger logger = LoggerFactory.getLogger(HlyServiceImpl.class);
 
 //    private final String baseUrl="https://apistage.huilianyi.com/gateway/";
     private static final String baseUrl="https://api.huilianyi.com/gateway/";
